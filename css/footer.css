@@ -1,0 +1,46 @@
+footer {
+  width: 100%;
+  height: 340px;
+  background-color: rgba(227, 141, 32, 60%);
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer > div.information{
+  position: relative;
+}
+footer > div.information >div{
+  font-size: 18px;
+  position: relative;
+  left: -50px;
+}
+
+/* footer > div.information > div {
+  align-content: flex-end;
+  height: 50px; 
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+} */
+footer > div.logo > img {
+  height: 200px;
+  margin-right: 20px;
+}
+footer > div.map > a > img{
+  height: 180px;
+  margin-right: 20px;
+}
+footer > div.line_icon{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 150px;
+}
+footer > div.line_icon > img{
+  width: 40px;
+}
+div.tibame{
+  text-align: center;
+}

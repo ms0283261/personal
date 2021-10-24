@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0px;
+  margin: 0px;
+}
+header > div.nav {
+  display: flex;
+  /* justify-content: space-between; */
+}
+header > div.nav > div.logo > a.logo > img {
+  width: 150px;
+  margin-left: 50px;
+}
+header > div.nav > nav.nav {
+  width: 1000px;
+}
+header > div.nav > nav.nav > ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  /* border: 1px solid rgb(255, 0, 0);
+  background-color: rgb(227, 141, 32, 60%); */
+  margin: 0px;
+  height: 100px;
+  align-items: center;
+  width: 100%;
+}
+/* header  > div.nav > nav.nav > ul > li{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+} */
+/* header  > div.nav > nav.nav > ul > li > a{
+    height: 100px;
+    display: inline-block;
+    
+    } */
+li.last_li {
+  margin-right: 10%;
+  /* display: block;
+    height: 50px; */
+}
+header > div.nav > nav.nav > ul > li > a {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  width: 150px;
+  text-align: center;
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  transition: 200ms;
+}
+header > div.nav > nav.nav > ul > li > a:hover {
+  color: rgba(227, 141, 32, 60%);
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.185);
+}
+input{
+    display: none;
+}
+header > div.nav > nav.nav > ul > li > a:active{
+  color: rgba(155, 99, 25, 0.6);
+  box-shadow: -2px -2px rgba(0, 0, 0, 0.185);
+}
+body{
+  font-family: "Noto_Sans_TC";
+}
+@font-face{
+  font-family: "Noto_Sans_TC"; /* 自訂名稱 */
+  src: url("../fonts/NotoSansTC.otf"); /* 字體檔路徑 */
+}
