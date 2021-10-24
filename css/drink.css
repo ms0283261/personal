@@ -110,5 +110,4 @@ table.gray::after{
   border-left: 1px solid gray ;
   height: 200px;
   transform: translate(-15px,-100%);
-
 }
