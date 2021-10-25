@@ -1,0 +1,28 @@
+@import url(./header.css);
+@import url(./footer.css);
+main > div.banner >img{
+  width: 100%;
+
+}
+main > div.banner{
+  position: relative;
+}
+main > div.banner > div.banner_title{
+  text-align: center;
+  position: absolute;
+  color: white;
+  font-weight: bolder;
+  font-size: 36px;
+  left: 50%;
+  transform: translate(-50% , -120%)
+
+}
+main > div.event_img {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+main > div.event_img > img {
+  width: 1200px;
+}

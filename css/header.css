@@ -58,7 +58,7 @@ header > div.nav > nav.nav > ul > li > a {
 }
 header > div.nav > nav.nav > ul > li > a:hover {
   color: rgba(227, 141, 32, 60%);
-  box-shadow: 2px 2px rgba(0, 0, 0, 0.185);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.185);
 }
 input{
     display: none;
