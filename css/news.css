@@ -38,10 +38,11 @@ main > div.news{
 main > div.news_u > div.news_square{
   border:1px solid brown;
   display: inline-block;
-  height: 400px;
+  height: 360px;
   width: 320px;
   margin: 10px;
   position: relative;
+  margin-bottom: 50px;
 }
 main > div.news_u > div.news_square > div.news_photo{
   width:300px;
@@ -63,4 +64,14 @@ main > div.news_u > div.news_square > a{
   left: 50%;
   transform: translate(-50%,50%);
   background-color: rgb(227, 141, 32);
+}
+main > div.news_u > div.news_square > div.photo_text{
+  margin:0 10px;
+  line-height: 1.5;
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
+  height: 120px;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  display: -webkit-box;
 }
