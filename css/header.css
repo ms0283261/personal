@@ -52,6 +52,10 @@ header > div.nav > nav.nav > ul > li > div > ul >li >a{
   text-decoration: none;
   background-color: white;
   color: black;
+  transition: 200ms;
+}
+header > div.nav > nav.nav > ul > li > div > ul >li >a:hover{
+  background-color: rgb(227, 141, 32);
 }
 header > div.nav > nav.nav > ul > li >a:hover + div > ul{
   display: block;
