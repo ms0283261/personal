@@ -27,6 +27,42 @@ header > div.nav > nav.nav > ul {
   align-items: center;
   width: 100%;
 }
+header > div.nav > nav.nav > ul > li{
+  position: relative;
+}
+header > div.nav > nav.nav > ul > li > div{
+  /* display: none; */
+  position: absolute;
+  width:150px;
+} 
+header > div.nav > nav.nav > ul > li > div > ul{
+  list-style: none;
+  width: 150px;
+  padding: 0px;
+  display: none;
+}
+header > div.nav > nav.nav > ul > li > div > ul >li{
+  width: 150px;
+  height: 50px;
+}
+header > div.nav > nav.nav > ul > li > div > ul >li >a{
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+}
+header > div.nav > nav.nav > ul > li >a:hover + div > ul{
+  display: block;
+  position: absolute;
+  z-index: 2;
+}
+header > div.nav > nav.nav > ul > li > div > ul:hover{
+  display: block;
+  position: absolute;
+  z-index: 2;
+}
 /* header  > div.nav > nav.nav > ul > li{
     height: 100px;
     width: 100%;
