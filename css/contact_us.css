@@ -49,6 +49,6 @@ textarea{
   border-radius:5px ;
   margin-right: 20px;
 }
-a.last_li{
+li.last_li > a{
     border-bottom: 4px solid rgba(227, 141, 32 ,0.6);
 }
