@@ -69,6 +69,7 @@ header > div.nav > nav.nav > ul > li > a:active{
 }
 body{
   font-family: "Noto_Sans_TC";
+  min-width: 1200px;
 }
 @font-face{
   font-family: "Noto_Sans_TC"; /* 自訂名稱 */
