@@ -87,3 +87,6 @@ main > div.news_u > div.news_square > div.news_photo > a > img{
   height: 100%;
   margin: 0;
 }
+a.news{
+  border-bottom: 4px solid rgba(227, 141, 32 ,0.6);
+}

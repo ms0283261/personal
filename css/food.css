@@ -86,3 +86,6 @@ main > div.total > div.sugar_ice > div > span{
   transform: translateX(-50%);
   font-size: 24px; 
 }
+a.food{
+  border-bottom: 4px solid rgba(227, 141, 32 ,0.6);
+}

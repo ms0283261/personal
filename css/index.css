@@ -195,3 +195,6 @@ div.news > div.new_drink > a.photo{
 /* div.title:hover{
   color: black;
 } */
+a.index{
+  border-bottom: 4px solid rgba(227, 141, 32 ,0.6);
+}

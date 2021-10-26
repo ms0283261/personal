@@ -62,3 +62,6 @@ main > div.back > a > div.back_button{
 main > div.back > a:hover >div.back_button{
   background-color: rgb(184, 104, 0);
 }
+a.food.news{
+  border-bottom: 4px solid rgba(227, 141, 32 ,0.6);
+}

@@ -111,3 +111,6 @@ table.gray::after{
   height: 200px;
   transform: translate(-15px,-100%);
 }
+a.drink{
+  border-bottom: 4px solid rgba(227, 141, 32 ,0.6);
+}
