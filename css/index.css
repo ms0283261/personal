@@ -157,6 +157,7 @@ div.news > div.event > a.photo{
   overflow: hidden;
   border-radius: 20px;
   /* justify-content: center; */
+  color: black;
 }
 div.news > div > a.photo > img{
   width:100%;
@@ -191,6 +192,7 @@ div.news > div.new_drink > a.photo{
   overflow: hidden;
   border-radius: 20px;
   /* justify-content: center; */
+  color: black;
 }
 /* div.title:hover{
   color: black;
