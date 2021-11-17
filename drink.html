@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>飲品介紹</title>
-    <link rel="stylesheet" href="./css/drink.css" />
+    <link rel="stylesheet" href="./css/drink.css">
   </head>
   <body>
     <header>
 
       <div class="nav">
         <div class="logo">
-          <a class="logo" href="#">
+          <a class="logo" href="./index.html">
             <img src="./images/1x/資產 1aaa.png" alt="測試測試測試測試" />
           </a>
         </div>
-
+  
         <nav class="nav">
           <ul class="nav_list">
             <li><a class="index" href="./index.html">關於本店</a></li>
@@ -33,13 +33,37 @@
             </li>
             <li class="last_li"><a href="./contact_us.html">聯繫我們</a></li>
           </ul>
+  
         </nav>
+        <label class="hamburger" for="hamburger_nav" id="hamburger">
+  
+        </label>
+  
+      </div>
+  
+      <div class="mobile_nav">
+        <input type="checkbox" id="hamburger_nav">
+        <ul class="mobile_list">
+          <li><a href="#">關於本店</a></li>
+          <li><a href="#">飲品介紹</a></li>
+          <li><a href="#">最新消息</a></li>
+          <label for="food" class="food_switch">食材介紹</label>
+          <input type="checkbox" id="food">
+          <div class="food_list">
+            <ul class="food_ul">
+              <li><a href="#">總覽</a></li>
+              <li><a href="#">鮮果</a></li>
+              <li><a href="#">鮮奶</a></li>
+            </ul>
+          </div>
+          <li><a href="#">聯繫我們</a></li>
+        </ul>
       </div>
     </header>
     <main>
       <div class="banner">
-        <img src="./images/banner testxxx.jpg" alt="" />
-        <div class="banner_title">飲品介紹<br />[PRODUCTS]</div>
+        <img src="./images/banner testxxx.jpg" alt="">
+        <div class="banner_title">飲品介紹<br>[PRODUCTS]</div>
       </div>
       <div class="rank">排行榜</div>
       <div class="drink">

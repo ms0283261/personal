@@ -40,6 +40,7 @@ main > div.rank{
 main > div.drink{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 main > div.drink > div.drink_name > div.photo > img{
   width: 200px;
@@ -81,6 +82,7 @@ main > div.drink_menu > div.menu_title{
 div.menu{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 tr,td,th{
   /* border: 1px solid black; */
@@ -117,4 +119,36 @@ table.gray::after{
 }
 a.drink{
   border-bottom: 4px solid rgba(227, 141, 32 ,0.6);
+}
+@media screen and (max-width: 575.98px) {
+main{
+  width: 100%;
+}
+main > div.banner > div.banner_title{
+  font-size: 24px;
+}
+}
+
+@media screen and (max-width: 766.98px) and (min-width: 576px) {
+main{
+  width:576px;
+}
+main > div.banner > div.banner_title{
+  font-size: 30px;
+}
+}
+@media screen and (max-width: 991.98px) and (min-width: 767px) {
+main {
+  width: 767px;
+}
+}
+@media screen and (max-width: 1199.98px) and (min-width: 992px) {
+main{
+  width: 992px;
+}
+}
+@media screen and (max-width: 1399.98px) and (min-width: 1200px) {
+
+}
+@media screen and (min-width: 1400px) {
 }

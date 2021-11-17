@@ -15,7 +15,7 @@
 
     <div class="nav">
       <div class="logo">
-        <a class="logo" href="#">
+        <a class="logo" href="./index.html">
           <img src="./images/1x/資產 1aaa.png" alt="測試測試測試測試" />
         </a>
       </div>
@@ -76,14 +76,19 @@
     </div>
   </main>
   <div class="story_title">600cc木瓜牛奶</div>
-  <div class="story">
+  <div class="story mobile_story">
     七海健人曾經說過：<span>「枕邊掉的頭髮越來越多，喜歡的夾菜麵包從便利商店消失，這些微小的絕望不斷積累，才會使人長大。」</span><br>
     西門町電影街曾承載著台北人的回憶，一間將要改建商場、另一間則是苦於找不到買主接手，這個現象也意味著電影街也被迫翻新，就連周遭不少商家、業者因租金問題苦撐。現在又碰上疫情讓商圈出現沒落危機，過去輝煌景象已不復見。<br />
     許多老台北人回到西門來尋找回憶，但是那些曾經的回憶卻一間一間的離開，許多人來店裡都會都會尋問，隔壁的台北戲院隔壁的台北戲院呢？路口賣冰的店呢？像是我們這樣的老店在西門已經不多見了，加上接連的疫情，又有更多老店結束營業。<br />
     這間６００ｃｃ木瓜牛奶乘載著大家年輕時的回憶，許多人帶著小孩敘述自己從小喝到大，<span>懷舊是一把鑰匙，打開記憶</span>。<br>
 
     <span>『在記憶裡不斷提醒著我們，什麼是最美好的事！』這是一杯木瓜牛奶的意義。</span>
+    <div class="i_am_so_tired"></div>
   </div>
+  <div class="help_me">
+    <label class="QaQ" for="QaQ">閱讀全文</label>
+  </div>
+  <input type="checkbox" id="QaQ" data-id="0">
   <div class="drink">
     <div class="rank_title">排行榜</div>
     <div class="drink_name">
@@ -114,7 +119,7 @@
         <img class="noview view" src="./images/papaya_milk.jpg" alt="error">
         <img class="noview" src="./images/drink2.jpg" alt="error">
         <img class="noview" src="./images/drink3.jpg" alt="">
-        <img class="noview" src="./images/drink4.jpg "alt="">
+        <img class="noview" src="./images/drink4.jpg " alt="">
       </div>
     </div>
   </div>
@@ -144,11 +149,8 @@
     </div>
     <div class="logo"><img src="./images/1x/資產 1aaa.png" alt="安安" /></div>
     <div class="map">
-      <a
-        href="https://www.google.com/maps/place/600cc%E6%9C%A8%E7%93%9C%E7%89%9B%E5%A5%B6/@25.0453072,121.5018111,17z/data=!3m1!4b1!4m5!3m4!1s0x3442a908b7a3b265:0x247b5065da989b67!8m2!3d25.0453072!4d121.5039998"
-        target="_blank"
-        ><img src="./images/map.jpg" alt="map"
-      /></a>
+      <a href="https://www.google.com/maps/place/600cc%E6%9C%A8%E7%93%9C%E7%89%9B%E5%A5%B6/@25.0453072,121.5018111,17z/data=!3m1!4b1!4m5!3m4!1s0x3442a908b7a3b265:0x247b5065da989b67!8m2!3d25.0453072!4d121.5039998"
+        target="_blank"><img src="./images/map.jpg" alt="map"></a>
     </div>
     <div class="line_icon">
       <img src="./images/line.png" alt="" />
@@ -156,7 +158,8 @@
       <img src="./images/facebook.png" alt="" />
     </div>
   </footer>
-  <div class="tibame">本網站為緯育TibaMe前端工程師專業技術養成班第72期學員專題作品，本平台僅供學習、展示之用。參考資源:<a href="https://www.papayamilk.com.tw/introduction/" target="_blank">北回木瓜牛奶</a> 。若有侵權疑慮，您可以私訊<a href="https://www.facebook.com/TibaMe/
+  <div class="tibame">本網站為緯育TibaMe前端工程師專業技術養成班第72期學員專題作品，本平台僅供學習、展示之用。參考資源:<a
+      href="https://www.papayamilk.com.tw/introduction/" target="_blank">北回木瓜牛奶</a> 。若有侵權疑慮，您可以私訊<a href="https://www.facebook.com/TibaMe/
     " target="_blank">[緯育TibaMe]</a>，後續會由專人協助處理</div>
   <script src="./js/header.js"></script>
   <script>
@@ -213,16 +216,44 @@
     // no2.addEventListener("click",function(){
     //   no_photo.classList.toggle("view")
     // })
-    for(let i = 0 ; i < no.length; i++ ){
-      no[i].addEventListener("click",function(){
-        for(let i = 0 ; i < no.length; i++){
-        if(no[i].checked){
-          no_photo[i].classList.add("view")
-        }else{
-          no_photo[i].classList.remove("view")
-        }}
+    for (let i = 0; i < no.length; i++) {
+      no[i].addEventListener("click", function () {
+        for (let i = 0; i < no.length; i++) {
+          if (no[i].checked) {
+            no_photo[i].classList.add("view")
+          } else {
+            no_photo[i].classList.remove("view")
+          }
+        }
       })
     }
+    //故事
+    let story_more = document.getElementsByClassName("story")[0];
+    let readmore = document.getElementsByClassName("QaQ")[0];
+    let test_check = document.getElementById("QaQ");
+    let block_story = document.getElementsByClassName("i_am_so_tired")[0];
+    // document.addEventListener("scroll",function(){
+    //   let nowY = document.documentElement.scrollTop ;
+    //     console.log(nowY)
+    // })
+    test_check.addEventListener("click", function () {
+      var nowY = 0;
+      if (test_check.checked) {
+        block_story.classList.remove("i_am_so_tired")
+        story_more.classList.remove("mobile_story")
+        nowY =  document.documentElement.scrollTop;
+       
+        test_check.setAttribute("data-id", nowY)
+        readmore.innerText = "隱藏文章"
+        
+      } else {
+        nowY = test_check.getAttribute("data-id")
+        block_story.classList.add("i_am_so_tired")
+        story_more.classList.add("mobile_story")
+        document.documentElement.scrollTop = nowY;
+        readmore.innerText = "閱讀全文"
+      }
+    })
 
   </script>
 </body>

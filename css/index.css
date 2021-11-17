@@ -250,20 +250,54 @@ a.index {
 @media screen and (max-width: 575.98px) {
   div.story {
     width: 100%;
-    font-size: 16px;
+    font-size: 14px;
+    padding: 10px;
+    position: relative;
+  }
+  div.mobile_story{
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+    height: 150px;
+    overflow: hidden;
+  }
+  div.story > div.i_am_so_tired{
+    position: absolute;
+    bottom: 0px;
+    height: 40px;
+    width: 100%;
+    background: linear-gradient(to top , white,rgba(255, 255, 255, 0.253));
+  }
+  div.help_me{
+    display: flex;
+    justify-content: center;
+  }
+  label.QaQ{
+    font-size: 14px;
+    background-color: black;
+    color: white;
+    width: 100px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 40px;
+    margin-top: 10px;
+    display: block;
   }
   div.story_title {
     width: 100%;
+    padding: 10px;
+    font-size: 20px;
   }
   div.drink {
     width: 100%;
-    margin: 50px auto 0px;
+    margin: 20px auto 0px;
   }
   div.mobile_title{
     height: 60px;
-    width: 120px;
+    width: 130px;
     font-size: 24px;
-    border: 5px solid rgb(227, 141, 32);
+    border: 4px solid rgb(227, 141, 32);
     text-align: center;
     color: rgb(227, 141, 32);
     border-radius: 60px;
@@ -365,6 +399,9 @@ div.news > div.new_drink > a.photo {
   border-radius: 20px;
 
   color: black;
+}
+div.news > div > a > div.photo_text {
+  transform: translateY(0%);
 }
 }
 
@@ -550,6 +587,7 @@ div.news > div {
   div.story,
   div.story_title {
     width: 100%;
+    
   }
   div.drink {
     width: 992px;
