@@ -145,6 +145,9 @@ body {
   src: url("../fonts/NotoSansTC.otf"); /* 字體檔路徑 */
 }
 @media screen and (max-width: 575.98px) {
+  header > div.nav{
+    justify-content: flex-start;
+  }
   header > div.nav > nav.nav {
     display: none;
     position: absolute;
