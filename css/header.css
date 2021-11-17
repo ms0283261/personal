@@ -1,13 +1,35 @@
 * {
   box-sizing: border-box;
 }
+a{
+  text-decoration: none;
+}
 body {
   padding: 0px;
   margin: 0px;
 }
+header {
+  /* max-width: 1440px; */
+  width: 100%;
+  /* min-width: 1200px; */
+  margin: 0 auto;
+}
 header > div.nav {
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+
+}
+header > div.mobile_nav{
+  display: none;
+}
+header > div.nav > div.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 header > div.nav > div.logo > a.logo > img {
   width: 150px;
@@ -27,25 +49,25 @@ header > div.nav > nav.nav > ul {
   align-items: center;
   width: 100%;
 }
-header > div.nav > nav.nav > ul > li{
+header > div.nav > nav.nav > ul > li {
   position: relative;
 }
-header > div.nav > nav.nav > ul > li > div{
+header > div.nav > nav.nav > ul > li > div {
   /* display: none; */
   position: absolute;
-  width:150px;
-} 
-header > div.nav > nav.nav > ul > li > div > ul{
+  width: 150px;
+}
+header > div.nav > nav.nav > ul > li > div > ul {
   list-style: none;
   width: 150px;
   padding: 0px;
   display: none;
 }
-header > div.nav > nav.nav > ul > li > div > ul >li{
+header > div.nav > nav.nav > ul > li > div > ul > li {
   width: 150px;
   height: 50px;
 }
-header > div.nav > nav.nav > ul > li > div > ul >li >a{
+header > div.nav > nav.nav > ul > li > div > ul > li > a {
   display: block;
   text-align: center;
   line-height: 50px;
@@ -54,15 +76,15 @@ header > div.nav > nav.nav > ul > li > div > ul >li >a{
   color: black;
   transition: 200ms;
 }
-header > div.nav > nav.nav > ul > li > div > ul >li >a:hover{
+header > div.nav > nav.nav > ul > li > div > ul > li > a:hover {
   background-color: rgb(227, 141, 32);
 }
-header > div.nav > nav.nav > ul > li >a:hover + div > ul{
+header > div.nav > nav.nav > ul > li > a:hover + div > ul {
   display: block;
   position: absolute;
   z-index: 2;
 }
-header > div.nav > nav.nav > ul > li > div > ul:hover{
+header > div.nav > nav.nav > ul > li > div > ul:hover {
   display: block;
   position: absolute;
   z-index: 2;
@@ -100,18 +122,255 @@ header > div.nav > nav.nav > ul > li > a:hover {
   color: rgba(227, 141, 32, 60%);
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.185);
 }
-input{
-    display: none;
+input {
+  display: none;
 }
-header > div.nav > nav.nav > ul > li > a:active{
+header > div.nav > nav.nav > ul > li > a:active {
   color: rgba(155, 99, 25, 0.6);
   box-shadow: -2px -2px rgba(0, 0, 0, 0.185);
 }
-body{
-  font-family: "Noto_Sans_TC";
-  min-width: 1200px;
+header > div.nav > div.hamburger {
+  height: 5px;
+  width: 50px;
+  background-color: black;
+  flex-shrink: 0;
+  display: none;
 }
-@font-face{
+body {
+  font-family: "Noto_Sans_TC";
+  /* min-width: 1200px; */
+}
+@font-face {
   font-family: "Noto_Sans_TC"; /* 自訂名稱 */
   src: url("../fonts/NotoSansTC.otf"); /* 字體檔路徑 */
+}
+@media screen and (max-width: 575.98px) {
+  header > div.nav > nav.nav {
+    display: none;
+    position: absolute;
+    
+    transition: 500ms;
+  }
+  header > div.nav > div.logo > a.logo > img {
+    width: 100px;
+    margin-left: 10px;
+  }
+
+  header > div.nav > label.hamburger {
+    height: 3px;
+    width: 30px;
+    background-color: black;
+    flex-shrink: 0;
+    display: block;
+    position: absolute;
+    right: 20px;
+    transition: 500ms;
+    
+  }
+  header > div.nav > label.hamburger::after {
+    content: "";
+    /* height: 3px;
+    width: 30px;
+    background-color: black;
+    border: 1px solid black;
+    
+    
+    bottom: 10px; */
+    position: absolute;
+    flex-shrink: 0;
+    height: 10px;
+    width: 30px;
+    border-top: 3px solid black;
+    transition: 500ms;
+    bottom: 0px;
+  }
+  header > div.nav > label.hamburger::before {
+    content: "";
+    /* height: 3px;
+    width: 30px; */
+    /* background-color: black; */
+    flex-shrink: 0;
+    position: absolute;
+    top: 0px;
+    transition: 500ms;
+    height: 10px;
+    width: 30px;
+    border-bottom: 3px solid black;
+  }
+  header > div.nav > label.coolX{
+    height:30px;
+    border: 3px solid rgb(227, 141, 32);
+    border-radius: 50%;
+    background-color:rgba(227, 141, 32,0) ;
+  }
+  header > div.nav > label.coolX::before{
+    transform: rotate(405deg);
+    /* right: -0.7px; */
+    width: 28px;
+    /* background-color: none ; */
+    right: -5px;
+    top: 1px;
+    border-bottom: 3px solid rgb(227, 141, 32);
+  }
+  header > div.nav > label.coolX::after{
+    transform: rotate(315deg);
+    /* right: -0.7px; */
+    width: 28px;
+    /* background-color:none; */
+    right: -5px;
+    bottom: 1px;
+    border-top: 3px solid rgb(227, 141, 32);
+  }
+  header > div.mobile_nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+  }
+  header > div.mobile_nav >ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    height: 0px;
+    overflow: hidden;
+    transition: 500ms;
+    background-color: rgb(227, 141, 32);
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+  }
+  header > div.mobile_nav > input:checked + ul{
+    height: calc(100vh - 66.7px);
+  }
+  header > div.mobile_nav > ul.mobile_list > li > a{
+    color: black;
+  }
+  header > div.mobile_nav > ul.mobile_list > label{
+    display: block;
+    background-color: rgb(255, 189, 102);
+    color: black;
+    position: relative;
+  }
+  header > div.mobile_nav > ul.mobile_list > label::after{
+    content: "v";
+    position: absolute;
+    font-size: 0.3px;
+    padding-top: 2px;
+    padding-left: 5px ;
+  }
+  header > div.mobile_nav > ul.mobile_list > div.food_list{
+    height: 0px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    transition: 200ms;
+  }
+  header > div.mobile_nav > ul.mobile_list > div.food_list > ul.food_ul{
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 189, 102);
+  }
+  header > div.mobile_nav > ul.mobile_list > div.food_list >ul > li >a{
+    color: black;
+   
+  }
+  header > div.mobile_nav > ul.mobile_list > input:checked + div.food_list{
+    height: 70px;
+  }
+  header > div.nav > nav.nav > ul {
+    display: block;
+  }
+
+  header > div.nav > nav.nav > ul > li > a {
+    height: 15px;
+    line-height: 15px;
+    width: 50px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 766.98px) and (min-width: 576px) {
+  header > div.nav > nav.nav > ul > li > a {
+    height: 30px;
+    line-height: 30px;
+    width: 80px;
+    font-size: 18px;
+  }
+  header > div.nav > div.logo > a.logo > img {
+    width: 100px;
+    margin-left: 20px;
+  }
+  header > div.nav > nav.nav > ul > li > div {
+    width: 80px;
+  }
+  header > div.nav > nav.nav > ul > li > div > ul {
+    width: 80px;
+    padding: 0px;
+  }
+  header > div.nav > nav.nav > ul > li > div > ul > li {
+    width: 80px;
+    height: 30px;
+  }
+  header > div.nav > nav.nav > ul > li > div > ul > li > a {
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 991.98px) and (min-width: 767px) {
+  header > div.nav > nav.nav > ul > li > a {
+    height: 30px;
+    line-height: 30px;
+    width: 100px;
+    font-size: 18px;
+  }
+  header > div.nav > div.logo > a.logo > img {
+    width: 100px;
+    margin-left: 50px;
+  }
+  header > div.nav > nav.nav > ul > li > div {
+    width: 100px;
+  }
+  header > div.nav > nav.nav > ul > li > div > ul {
+    width: 100px;
+    padding: 0px;
+  }
+  header > div.nav > nav.nav > ul > li > div > ul > li {
+    width: 100px;
+    height: 30px;
+  }
+  header > div.nav > nav.nav > ul > li > div > ul > li > a {
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 1199.98px) and (min-width: 992px) {
+  header > div.nav > nav.nav > ul > li > a {
+    height: 40px;
+    line-height: 40px;
+    width: 130px;
+    font-size: 22px;
+  }
+  header > div.nav > div.logo > a.logo > img {
+    width: 130px;
+    margin-left: 50px;
+  }
+  header > div.nav > nav.nav > ul > li > div {
+    width: 130px;
+  }
+  header > div.nav > nav.nav > ul > li > div > ul {
+    width: 130px;
+    padding: 0px;
+  }
+  header > div.nav > nav.nav > ul > li > div > ul > li {
+    width: 130px;
+    height: 40px;
+  }
+  header > div.nav > nav.nav > ul > li > div > ul > li > a {
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 1399.98px) and (min-width: 1200px) {
+}
+@media screen and (min-width: 1400px) {
 }

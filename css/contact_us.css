@@ -14,40 +14,73 @@ main > div.banner > div.banner_title{
   font-weight: bolder;
   font-size: 36px;
   left: 50%;
-  transform: translate(-50% , -120%)
+  transform: translate(-50% , -120%);
+}
 
+div.contact_title{
+width: 880px;
+display: inline-block;
+margin: 10px 0;
+font-size: 24px;
+color: rgb(227, 141, 32);
+}
+div.contact_title::after{
+  content: "";
+  height: 20px;
+  width: 1200px;
+  background-color: rgb(227, 141, 32);
 }
 form{
   width: 1200px;
-  margin: 0 auto;
-}
-form > div{
-  width: 1200px;
-  margin: 0 auto;
+  margin: 50px auto;
   display: flex;
-  justify-content:center;
-  margin-top: 50px;
+  align-items: center;
+  flex-direction: column;
+}
+form > div.form{
+  display: flex;
+  justify-content: center;
 }
 input{
   display: inline-block;
   width: 380px;
   border-radius: 5px;
-  border: 1px solid black;
-  margin-right: 20px;
+  border: 1px solid gray;
+  margin: 20px 10px 20px 10px;
+  height: 36px;
 
 }
+input:focus{
+  box-shadow: 0 0 6px -1px black;
+}
+select:focus{
+  box-shadow: 0 0 6px -1px black;
+}
+
+/* input::placeholder{
+  color: white;
+} */
 select{
   border-radius: 5px;
   width: 380px;
-  margin-left: 1px;
-  margin-right: 20px;
+  margin: 20px 10px 20px 10px;
+  height: 36px
+}
+form > div.note{
+  display: flex;
+  width: 881px;
+  justify-content: space-between;
+  align-items: center;
 }
 textarea{
   width: 820px;
   height: 60px;
   resize: none;
   border-radius:5px ;
-  margin-right: 20px;
+ margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 li.last_li > a{
     border-bottom: 4px solid rgba(227, 141, 32 ,0.6);
