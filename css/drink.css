@@ -126,12 +126,15 @@ a.drink{
   }
   main{
     width: 100%;
+
   }
   main > div.banner > div.banner_title{
     font-size: 20px;
     transform: translate(-50% , -110%)
   }
-  
+  main > div.rank{
+    margin: 20px auto;
+  }
 }
 @media screen and (max-width: 575.98px)  and (min-width: 408px){
 main{
