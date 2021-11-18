@@ -120,18 +120,37 @@ table.gray::after{
 a.drink{
   border-bottom: 4px solid rgba(227, 141, 32 ,0.6);
 }
-@media screen and (max-width: 575.98px) {
+@media screen and (max-width:407.8px) {
+  table.gray::after{
+    display: none;
+  }
+  main{
+    width: 100%;
+  }
+  main > div.banner > div.banner_title{
+    font-size: 20px;
+    transform: translate(-50% , -110%)
+  }
+  
+}
+@media screen and (max-width: 575.98px)  and (min-width: 408px){
 main{
   width: 100%;
 }
 main > div.banner > div.banner_title{
   font-size: 24px;
 }
+table.t2::after{
+  display: none;
+}
 }
 
 @media screen and (max-width: 766.98px) and (min-width: 576px) {
 main{
   width:576px;
+}
+table.t2::after{
+  display: none;
 }
 main > div.banner > div.banner_title{
   font-size: 30px;
@@ -140,6 +159,10 @@ main > div.banner > div.banner_title{
 @media screen and (max-width: 991.98px) and (min-width: 767px) {
 main {
   width: 767px;
+  
+}
+table.t3::after{
+  display: none;
 }
 }
 @media screen and (max-width: 1199.98px) and (min-width: 992px) {

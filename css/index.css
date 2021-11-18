@@ -60,6 +60,9 @@ div.story {
 div.story > span {
   font-weight: bold;
 }
+div.help_me{
+  display: none;
+}
 /* 排行榜~~~~ */
 div.mobile_title{
   display: none;
