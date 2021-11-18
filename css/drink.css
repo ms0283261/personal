@@ -133,7 +133,11 @@ a.drink{
     transform: translate(-50% , -110%)
   }
   main > div.rank{
+    font-size: 36px;
     margin: 20px auto;
+    width: 150px;
+    height: 80px;
+    line-height: 72px;
   }
 }
 @media screen and (max-width: 575.98px)  and (min-width: 408px){
@@ -145,6 +149,13 @@ main > div.banner > div.banner_title{
 }
 table.t2::after{
   display: none;
+}
+main > div.rank{
+  font-size: 36px;
+  margin: 20px auto;
+  width: 150px;
+  height: 80px;
+  line-height: 72px;
 }
 }
 
