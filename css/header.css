@@ -266,19 +266,19 @@ body {
   }
   header > div.mobile_nav > ul.mobile_list > label{
     display: block;
-    background-color: rgb(255, 189, 102);
+    background-color: rgb(227, 141, 32);
     color: black;
     position: relative;
     height: 30px;
     line-height: 30px;
   }
-  header > div.mobile_nav > ul.mobile_list > label::after{
+  /* header > div.mobile_nav > ul.mobile_list > label::after{
     content: "v";
     position: absolute;
     font-size: 0.3px;
     padding-top: 2px;
     padding-left: 5px ;
-  }
+  } */
   header > div.mobile_nav > ul.mobile_list > div.food_list{
     height: 0px;
     padding: 0;
