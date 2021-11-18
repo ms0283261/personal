@@ -253,6 +253,16 @@ body {
     display: block;
     height: 100%;
     line-height: 30px;
+    position: relative;
+  }
+  header > div.mobile_nav > ul.mobile_list > li > a.now::after{
+    content: "";
+    width: 30%;
+    position: absolute;
+    bottom: 0px;
+    border-bottom: 2px solid black;
+    transform: translateX(-50%);
+    left: 50%;
   }
   header > div.mobile_nav > ul.mobile_list > label{
     display: block;
