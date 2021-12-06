@@ -13,17 +13,17 @@ function doFirst() {
     let big_range = 400;
     let degree = 0;
     let num_num = 8;
-    range.addEventListener('mousemove', function () {
+    range.addEventListener('input', function () {
         big_range = parseInt(range.value);
 
         draw();
     })
-    deg_range.addEventListener('mousemove', function () {
+    deg_range.addEventListener('input', function () {
         degree = parseInt(deg_range.value);
 
         draw();
     })
-    num.addEventListener('mousemove', function () {
+    num.addEventListener('input', function () {
         num_num = parseInt(num.value);
 
         draw();
