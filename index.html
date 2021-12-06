@@ -237,21 +237,20 @@
     //     console.log(nowY)
     // })
     test_check.addEventListener("click", function () {
-      var nowY = 0;
+      var nowY
+      console.log(test_check.checked)
       if (test_check.checked) {
-        block_story.classList.remove("i_am_so_tired")
-        story_more.classList.remove("mobile_story")
+        block_story.classList.remove("i_am_so_tired");
+        story_more.classList.remove("mobile_story");
         nowY =  document.documentElement.scrollTop;
-       
-        test_check.setAttribute("data-id", nowY)
-        readmore.innerText = "隱藏文章"
-        
+        test_check.setAttribute("data-id", nowY);
+        readmore.innerText = "隱藏文章";
       } else {
-        nowY = test_check.getAttribute("data-id")
-        block_story.classList.add("i_am_so_tired")
-        story_more.classList.add("mobile_story")
+        nowY = test_check.getAttribute("data-id");
+        block_story.classList.add("i_am_so_tired");
+        story_more.classList.add("mobile_story");
         document.documentElement.scrollTop = nowY;
-        readmore.innerText = "閱讀全文"
+        readmore.innerText = "閱讀全文";
       }
     })
 
